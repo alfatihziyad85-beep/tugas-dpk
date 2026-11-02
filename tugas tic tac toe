@@ -1,0 +1,23 @@
+
+/*
+Array 2D - Tic Tac Toe
+*/
+#include <stdio.h>
+#include <stdlib.h>
+
+char C[3][3] = {{'X','O','X'},{'O','X','O'},{'O','X','X'}};
+
+int main(int argc, char *argv[]) {
+
+    for(int baris=0;baris<3;baris++)
+    {
+        for(int kolom=0;kolom<3;kolom++)
+        {
+            printf(" %c ",C[baris][kolom]);
+            if(kolom<2) printf("|");
+        }
+        printf("\n");
+        if(baris<2) printf("---+---+---\n");
+    }
+    return 0;
+}
